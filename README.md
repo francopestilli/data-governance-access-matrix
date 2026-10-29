@@ -28,12 +28,44 @@ Code/
 │   ├── bridge_neurodata_cross_border_interoperability_bp_edits_current.ipynb
 │   ├── input_file/       # Notebook inputs
 │   └── output_files/     # Figure exports (PNG, PDF, and HTML)
+├── website_figures/
+│   ├── make_website_figures.py   # Figure 3 panels in the style of braindatagovernance.org
+│   └── output_files/             # PNG, PDF, matrix.json, derived_measures.csv
 └── r_figures/
     ├── bridge_legal_toolkit.R
     └── input_files/      # CSV tables used by the R script
 ```
 
 The Jupyter notebook generates the matrix and map figures and additional visual analyses. The R script contains complementary plots of the manuscript’s regional legal-governance tables. The repository includes CSV tables in `Code/r_figures/input_files/`; however, the current R script still refers to absolute file paths from its original development environment in several places. Those paths must be updated to the included, repository-relative CSV files before the script can run on another computer. Generated examples are retained in `Code/jupyter_notebook_figures/output_files/`; both PNG and PDF versions are available for many figures.
+
+## Website-style figures (Figure 3)
+
+`Code/website_figures/make_website_figures.py` draws the compatibility matrix, the network of
+enabled pathways, the two maps and a region-to-region summary in the same style as the interactive
+versions at [braindatagovernance.org/toolkit/legal-landscape](https://braindatagovernance.org/toolkit/legal-landscape/).
+It reads `Code/jupyter_notebook_figures/input_file/data-sharing-matrix.xlsx` and computes the
+same quantities as the manuscript Methods: the diagonal is treated as missing; the network keeps
+classes A1, A2 and B with weights 3, 2 and 1 and sizes nodes by weighted in- plus out-strength; the
+import map shows the modal class of incoming pathways from the 24-jurisdiction European reference
+set (23 for members of the set); the entropy map shows the Shannon entropy in bits of each
+jurisdiction's complete incoming profile. Only the drawing differs from the notebook figures: the
+palette (A1 `#1b7f4a`, A2 `#8fcf8a`, B `#f1c232`, C `#e8842c`, D `#c0392b`, E `#6b7280`), the matrix
+ordered by region (Europe, Africa, Latin America and the Caribbean), jurisdictions placed on three
+regional rings instead of a force-directed layout, and an equirectangular map window (standard
+parallel 25°) with the United States and Canada marked as not coded at country level.
+
+```bash
+pip install pandas numpy matplotlib openpyxl geopandas pyogrio pycountry
+python Code/website_figures/make_website_figures.py            # writes Code/website_figures/output_files/
+python Code/website_figures/make_website_figures.py --no-maps  # matrix, network and corridors only
+```
+
+Map boundaries are Natural Earth 10 m, downloaded on first run as in the notebook. Where that
+download is blocked, put `countries-50m.json` from the npm package `world-atlas` (Natural Earth
+50 m, public domain) next to the script and it is used instead. The script also writes
+`matrix.json`, the file the website's `src/landscape/findings.py` reads, so the website can be
+regenerated from this repository, and `derived_measures.csv` with the modal import class, entropy
+and weighted strengths per jurisdiction.
 
 ## Reproducing the figures
 

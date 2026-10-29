@@ -1,0 +1,94 @@
+jurisdiction,region,modal_import_class_from_european_reference_set,import_entropy_bits,weighted_out_strength,weighted_in_strength
+Germany,Europe,A1,1.899,82,102
+France,Europe,A1,1.899,82,102
+Italy,Europe,A1,1.899,82,102
+Spain,Europe,A1,1.899,82,102
+Netherlands,Europe,A1,1.899,82,102
+Belgium,Europe,A1,1.899,82,102
+Sweden,Europe,A1,1.899,82,102
+Austria,Europe,A1,1.899,82,102
+Finland,Europe,A1,1.899,82,102
+Ireland,Europe,A1,1.899,82,102
+Denmark,Europe,A1,1.899,82,102
+Luxembourg,Europe,A1,1.899,82,102
+Czechia,Europe,A1,1.899,82,102
+Portugal,Europe,A1,1.899,82,102
+Lithuania,Europe,A1,1.899,82,102
+Estonia,Europe,A1,1.899,82,102
+Poland,Europe,A1,1.899,82,102
+Greece,Europe,A1,1.899,82,102
+Hungary,Europe,A1,1.899,82,102
+Slovakia,Europe,A1,1.899,82,102
+Slovenia,Europe,A1,1.899,82,102
+Romania,Europe,A1,1.899,82,102
+United Kingdom,Europe,A2,1.757,61,81
+Switzerland,Europe,A2,1.757,61,81
+Algeria,Africa,C,0.39,0,0
+Angola,Africa,C,0.39,0,0
+Benin,Africa,C,0.39,0,0
+Botswana,Africa,A2,1.894,61,61
+Burkina Faso,Africa,C,0.39,0,0
+Cabo Verde,Africa,B,1.518,37,37
+Cameroon,Africa,C,0.39,0,0
+Comoros,Africa,C,0.838,0,0
+Republic of the Congo,Africa,C,0.39,0,0
+Cote d'Ivoire,Africa,C,0.39,0,0
+Democratic Republic of the Congo,Africa,C,0.876,0,0
+Djibouti,Africa,C,0.857,0,0
+Egypt,Africa,B,1.518,37,37
+Eswatini,Africa,C,0.39,0,0
+Ethiopia,Africa,C,0.39,0,0
+Gabon,Africa,C,0.39,0,0
+Ghana,Africa,B,1.518,37,37
+Guinea,Africa,C,0.876,0,0
+Kenya,Africa,B,1.518,37,37
+Lesotho,Africa,C,0.39,0,0
+Liberia,Africa,C,0.876,0,0
+Libya,Africa,E,1.059,0,0
+Madagascar,Africa,C,0.39,0,0
+Malawi,Africa,C,0.39,0,0
+Mauritania,Africa,C,0.925,0,0
+Mauritius,Africa,B,1.518,37,37
+Morocco,Africa,B,1.518,37,37
+Mozambique,Africa,C,0.39,0,0
+Namibia,Africa,C,0.39,0,0
+Nigeria,Africa,B,1.518,37,37
+Rwanda,Africa,B,1.518,37,37
+Sao Tome and Principe,Africa,C,0.954,0,0
+Senegal,Africa,B,1.518,37,37
+Seychelles,Africa,B,1.518,37,37
+Sierra Leone,Africa,C,0.954,0,0
+South Africa,Africa,B,1.518,37,37
+Tanzania,Africa,C,0.39,0,0
+The Gambia,Africa,C,0.39,0,0
+Togo,Africa,C,0.39,0,0
+Tunisia,Africa,B,1.518,37,37
+Uganda,Africa,C,0.39,0,0
+Zambia,Africa,B,1.518,37,37
+Zimbabwe,Africa,C,0.39,0,0
+Argentina,Latin America & Caribbean,C,0.509,27,3
+Barbados,Latin America & Caribbean,C,0.305,24,0
+Belize,Latin America & Caribbean,C,0.305,24,0
+Bolivia,Latin America & Caribbean,D,-0.0,0,0
+Brazil,Latin America & Caribbean,C,0.509,27,3
+Chile,Latin America & Caribbean,C,0.509,27,3
+Colombia,Latin America & Caribbean,C,0.305,24,0
+Costa Rica,Latin America & Caribbean,C,0.305,24,0
+Cuba,Latin America & Caribbean,C,0.305,24,0
+Dominica,Latin America & Caribbean,E,0.828,0,0
+Dominican Republic,Latin America & Caribbean,C,0.305,0,0
+Ecuador,Latin America & Caribbean,C,0.305,24,0
+El Salvador,Latin America & Caribbean,D,-0.0,0,0
+Grenada,Latin America & Caribbean,C,0.305,24,0
+Guatemala,Latin America & Caribbean,D,-0.0,0,0
+Guyana,Latin America & Caribbean,C,0.305,24,0
+Honduras,Latin America & Caribbean,D,-0.0,0,0
+Jamaica,Latin America & Caribbean,C,0.305,24,0
+Mexico,Latin America & Caribbean,C,0.305,24,0
+Nicaragua,Latin America & Caribbean,C,0.305,24,0
+Panama,Latin America & Caribbean,C,0.305,24,0
+Paraguay,Latin America & Caribbean,C,0.305,24,0
+Peru,Latin America & Caribbean,C,0.305,24,0
+Saint Lucia,Latin America & Caribbean,C,0.305,24,0
+Trinidad and Tobago,Latin America & Caribbean,C,0.305,24,0
+Uruguay,Latin America & Caribbean,C,0.509,27,3
