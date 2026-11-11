@@ -60,7 +60,7 @@ python Code/website_figures/make_website_figures.py            # writes Code/web
 python Code/website_figures/make_website_figures.py --no-maps  # matrix, network and corridors only
 ```
 
-Map boundaries are Natural Earth 10 m, downloaded on first run as in the notebook. Where that
+Map boundaries are Natural Earth 50 m, downloaded on first run as in the notebook. Where that
 download is blocked, put `countries-50m.json` from the npm package `world-atlas` (Natural Earth
 50 m, public domain) next to the script and it is used instead. The script also writes
 `matrix.json`, the file the website's `src/landscape/findings.py` reads, so the website can be

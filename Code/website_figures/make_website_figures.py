@@ -25,7 +25,7 @@ Usage
 Input   ../jupyter_notebook_figures/input_file/data-sharing-matrix.xlsx (rows export, columns receive)
 Output  PNG + PDF per figure, matrix.json (the file the website reads) and derived_measures.csv
 
-Map boundaries: Natural Earth 10 m (downloaded on first run, as in the notebook). If the
+Map boundaries: Natural Earth 50 m (downloaded on first run, as in the notebook). If the
 download is not possible, place the npm package `world-atlas` file `countries-50m.json`
 (Natural Earth 50 m, public domain) next to this script and it is used instead.
 
@@ -215,13 +215,13 @@ def fig_network(df, d, outdir):
 # --------------------------------------------------------------------------- maps
 def load_world():
     import geopandas as gpd, pycountry
-    ne = HERE / "map_data_10m"; shp = ne / "ne_10m_admin_0_countries.shp"
+    ne = HERE / "map_data_50m"; shp = ne / "ne_50m_admin_0_countries.shp"
     if not shp.exists():
         try:
             ne.mkdir(exist_ok=True)
-            z = ne / "ne_10m_admin_0_countries.zip"
-            print("downloading Natural Earth 10 m boundaries ...")
-            urllib.request.urlretrieve("https://naturalearth.s3.amazonaws.com/10m_cultural/ne_10m_admin_0_countries.zip", z)
+            z = ne / "ne_50m_admin_0_countries.zip"
+            print("downloading Natural Earth 50 m boundaries ...")
+            urllib.request.urlretrieve("https://naturalearth.s3.amazonaws.com/50m_cultural/ne_50m_admin_0_countries.zip", z)
             zipfile.ZipFile(z).extractall(ne)
         except Exception as e:
             print("Natural Earth download failed:", e)
